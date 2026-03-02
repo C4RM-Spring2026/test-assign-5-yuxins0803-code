@@ -8,4 +8,4 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
     cf = np.full(n, c, dtype=float)
     cf[-1] += face
     pv = 1.0 / (1.0 + r) ** t
-    return float(np.sum(cf * pv))
+    return np.sum(cf * pv)
