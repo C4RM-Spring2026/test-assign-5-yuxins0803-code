@@ -10,4 +10,4 @@ def getBondDuration(y, face, couponRate, m, ppy = 1):
     pv = cf / (1 + r) ** t
     price = np.sum(pv)
     duration = np.sum(t * pv) / price
-return duration / ppy
+    return duration / ppy
